@@ -1,47 +1,108 @@
-html,
-body {
-  height: 100%;
+html, body, .Search{
+    height: 100%;
+    width: 100%;
+    max-width: 1920px;
 }
 
-body {
-  display: flex;
-  align-items: center;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  background-color: white;
+body{
+    background-color: white;
+}
+@media (min-width: 700px) {
+    #Search{ /*Search input*/
+        margin: auto;
+        font-size: 18px;
+        width: 680px;
+        border-radius: 30px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 20px;
+        padding-bottom: 17px;
+        background: rgb(233, 233, 233);
+        border-style: none;
+        transition:all .5s ;
+        -o-transition:all .5s ;
+        -moz-transition:all .5s ;
+        -webkit-transition:all .5s ;
+    } 
+    #but {
+        font-size: 30px;
+        margin: auto;
+        color: white;
+        background: burlywood;
+        border-color: burlywood;
+        border-radius: 30px;
+        border-style: none;
+        margin-top: 8px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-right: 40px;
+        padding-left: 40px;
+        transition: background .4s, border-radius .4s;
+        -o-transition: background .4s, border-radius .4s;
+        -moz-transition: background .4s, border-radius .4s;
+        -webkit-transition: background .4s, border-radius .4s;
+    }
+    #but:hover {
+        background: rgb(205, 170, 124);
+        border-radius: 15px;
+    }
+}
+
+@media (max-width: 700px){
+    #Search{ /*Search input*/
+        margin: auto;
+        width: 300px;
+        font-size: 18px;
+        border-radius: 30px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        background: rgb(233, 233, 233);
+        border-style: none;
+        transition:all .5s ;
+        -o-transition:all .5s;
+        -moz-transition:all .5s;
+        -webkit-transition:all .5s;
+    }
+
+    #but {
+        font-size: 30px;
+        margin: auto;
+        color: white;
+        background: burlywood;
+        border-color: burlywood;
+        border-radius: 30px;
+        border-style: none;
+        margin-top: 8px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-right: 40px;
+        padding-left: 40px;
+        transition: background .4s, border-radius .4s;
+        -o-transition: background .4s, border-radius .4s;
+        -moz-transition: background .4s, border-radius .4s;
+        -webkit-transition: background .4s, border-radius .4s;
+    }
+    #but:hover {
+        background: rgb(205, 170, 124);
+        border-radius: 15px;
+    }
+}
+
+.Search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 } 
 
-
-
-.form-search {
-  width: 100%;
-  max-width: 400px;
-  padding: 15px;
-  margin: auto;
-  font-weight: 400;
+#Search:focus-visible{  
+    outline: 0;  /*Потом настроить UI*/
 }
 
-.form-search .form-floating:focus-within {
-  z-index: 2;
-}
-
-.form-search input[type="text"] {
-  margin-bottom: -3px;
-  border-radius: 10px;
-}
-
-
-#button{
-  border-radius: 10px;
-  background-color:burlywood;
-  border-color: burlywood;
-  transition: all 0.8s;
-}
-
-#button:hover{
-  border-radius: 7px;
-  color: white;
-  border-color: rgb(187, 157, 119);
-  background-color: rgb(187, 157, 119);
-  transition: all 0.8s;
+.submitt{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
 }
