@@ -1,92 +1,92 @@
+/*Added font Poppins, added NavBar, main redesign*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
 html, body, .Search{
-    height: 100%;
-    width: 100%;
+    height: 99%;
+    width: 99%;
     max-width: 1920px;
+    max-height: 1080px;
 }
 
 body{
     background-color: white;
 }
-@media (min-width: 700px) {
+@media (min-width: 750px) {
     #Search{ /*Search input*/
         margin: auto;
         font-size: 18px;
-        width: 680px;
-        border-radius: 30px;
+        width: 550px;
+        border-radius: 30px 0 0 30px;
         padding-left: 20px;
         padding-right: 20px;
         padding-top: 20px;
         padding-bottom: 17px;
         background: rgb(233, 233, 233);
         border-style: none;
-        transition:all .5s ;
-        -o-transition:all .5s ;
-        -moz-transition:all .5s ;
-        -webkit-transition:all .5s ;
+        transition: width .5s, border-radius .5s;
+        -o-transition: width .5s, border-radius .5s ;
+        -moz-transition: width .5s, border-radius .5s ;
+        -webkit-transition: width .5s, border-radius .5s ;
     } 
     #but {
-        font-size: 30px;
+        font-size: 28px;
         margin: auto;
         color: white;
         background: burlywood;
         border-color: burlywood;
-        border-radius: 30px;
+        border-radius: 0 30px 30px 0;
         border-style: none;
-        margin-top: 8px;
-        padding-top: 10px;
-        padding-bottom: 10px;
+        padding-top: 11px;
+        padding-bottom: 11px;
         padding-right: 40px;
         padding-left: 40px;
         transition: background .4s, border-radius .4s;
         -o-transition: background .4s, border-radius .4s;
         -moz-transition: background .4s, border-radius .4s;
         -webkit-transition: background .4s, border-radius .4s;
-    }
-    #but:hover {
-        background: rgb(205, 170, 124);
-        border-radius: 15px;
     }
 }
 
-@media (max-width: 700px){
+@media (max-width: 750px){
     #Search{ /*Search input*/
         margin: auto;
-        width: 300px;
+        width: 280px;
         font-size: 18px;
-        border-radius: 30px;
+        border-radius: 30px 0 0 30px;
         padding-left: 20px;
         padding-right: 20px;
         padding-top: 20px;
-        padding-bottom: 20px;
+        padding-bottom: 17px;
         background: rgb(233, 233, 233);
         border-style: none;
-        transition:all .5s ;
-        -o-transition:all .5s;
-        -moz-transition:all .5s;
-        -webkit-transition:all .5s;
+        transition: width .5s, border-radius .5s ;
+        -o-transition: width .5s, border-radius .5s;
+        -moz-transition: width .5s, border-radius .5s;
+        -webkit-transition: width .5s, border-radius .5s;
     }
 
     #but {
-        font-size: 30px;
+        font-size: 28px;
         margin: auto;
         color: white;
         background: burlywood;
         border-color: burlywood;
-        border-radius: 30px;
+        border-radius: 0 30px 30px 0;
         border-style: none;
-        margin-top: 8px;
-        padding-top: 10px;
-        padding-bottom: 10px;
+        padding-top: 11px;
+        padding-bottom: 11px;
         padding-right: 40px;
         padding-left: 40px;
         transition: background .4s, border-radius .4s;
         -o-transition: background .4s, border-radius .4s;
         -moz-transition: background .4s, border-radius .4s;
         -webkit-transition: background .4s, border-radius .4s;
-    }
-    #but:hover {
-        background: rgb(205, 170, 124);
-        border-radius: 15px;
     }
 }
 
@@ -96,13 +96,45 @@ body{
     align-items: center;
 } 
 
-#Search:focus-visible{  
-    outline: 0;  /*Потом настроить UI*/
+.main {
+    display: flex;
 }
 
-.submitt{
+.nav{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: auto;
+}
+
+.nav ul{
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    margin-top: 30px;
+}
+
+.nav ul a{
+    font-size: 18px;
+    background: burlywood;
+    margin: 10px;
+    border-radius: 30px;
+    padding: 15px 20px 15px 20px;
+    text-decoration: none;
+    color: white;
+    transition: border-radius .5s, background .5s;
+}
+
+.nav ul a:hover{
+    background: rgb(205, 170, 124);
+    border-radius: 20px;
+}
+
+#Search:focus-visible{  
+    outline: 0; 
+    border-radius: 20px 0 0 20px;
+}
+
+#but:hover {
+    background: rgb(205, 170, 124);
+    border-radius: 0 20px 20px 0;
 }
