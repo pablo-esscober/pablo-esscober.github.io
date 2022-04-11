@@ -8,10 +8,8 @@
 }
 
 html, body, .Search{
-    height: 99%;
-    width: 99%;
-    max-width: 1920px;
-    max-height: 1080px;
+    height: 100%;
+    width: 100%;
 }
 
 body{
@@ -34,23 +32,6 @@ body{
         -moz-transition: width .5s, border-radius .5s ;
         -webkit-transition: width .5s, border-radius .5s ;
     } 
-    #but {
-        font-size: 28px;
-        margin: auto;
-        color: white;
-        background: burlywood;
-        border-color: burlywood;
-        border-radius: 0 30px 30px 0;
-        border-style: none;
-        padding-top: 12px;
-        padding-bottom: 12px;
-        padding-right: 40px;
-        padding-left: 40px;
-        transition: background .4s, border-radius .4s;
-        -o-transition: background .4s, border-radius .4s;
-        -moz-transition: background .4s, border-radius .4s;
-        -webkit-transition: background .4s, border-radius .4s;
-    }
 }
 
 @media (max-width: 750px){
@@ -70,24 +51,24 @@ body{
         -moz-transition: width .5s, border-radius .5s;
         -webkit-transition: width .5s, border-radius .5s;
     }
+}
 
-    #but {
-        font-size: 28px;
-        margin: auto;
-        color: white;
-        background: burlywood;
-        border-color: burlywood;
-        border-radius: 0 30px 30px 0;
-        border-style: none;
-        padding-top: 12px;
-        padding-bottom: 12px;
-        padding-right: 40px;
-        padding-left: 40px;
-        transition: background .4s, border-radius .4s;
-        -o-transition: background .4s, border-radius .4s;
-        -moz-transition: background .4s, border-radius .4s;
-        -webkit-transition: background .4s, border-radius .4s;
-    }
+#but {
+    font-size: 28px;
+    margin: auto;
+    color: white;
+    background: burlywood;
+    border-color: burlywood;
+    border-radius: 0 30px 30px 0;
+    border-style: none;
+    padding-top: 11.5px;
+    padding-bottom: 10.3px;
+    padding-right: 40px;
+    padding-left: 40px;
+    transition: background .4s, border-radius .4s;
+    -o-transition: background .4s, border-radius .4s;
+    -moz-transition: background .4s, border-radius .4s;
+    -webkit-transition: background .4s, border-radius .4s;
 }
 
 .Search{
