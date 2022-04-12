@@ -33,3 +33,9 @@ html, body, .searchbar{
 .searchsmall{
     width: 40px;
 }
+
+@media screen and (max-width:480px){
+    #searchbar{
+        background: burlywood;
+    }
+}
