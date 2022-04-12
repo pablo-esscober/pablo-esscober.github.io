@@ -15,10 +15,9 @@ html, body{
 body{
     background: #FFECE2;
 }
-
 #logobox{
     position: absolute;
-    height: 50%;
+    height: 40%;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -26,9 +25,8 @@ body{
 }
 
 #logo{
-    height: 300px;
+    height: 150px;
 }
-
 #searchbarbox{
     position: absolute;
     width: 100%;
@@ -37,23 +35,18 @@ body{
     justify-content: center;
     align-items: center;
 }
-
 #searchbar{
-    font-size: 40px;
-    width: 900px;
-    height: 170px;
-    border-radius: 50px;
+    font-size: 30px;
+    width: 80%;
+    height: 110px;
+    border-radius: 35px;
     border-style: none;
     background: #D3C3B0;
     box-shadow: 0px 6px 13px rgba(0, 0, 0, 0.25);
     padding: 10px 50px 0 50px;
-    z-index: 1;
 }
 #searchbar::placeholder{
-    font-size: 40px;
-}
-#searchbar:focus-visible{
-    outline: 0;
+    font-size: 30px;
 }
 #butbox{
     height: 100%;
@@ -67,33 +60,39 @@ body{
 #but{
     display: flex;
     color: white;
-    margin-right: 40px;
+    margin-right: 10%;
     border-style: none;
-    border-radius: 50px;
+    border-radius: 35px;
     background: #E5B985;
     box-shadow: -3px 0px 24px -6px rgba(0, 0, 0, 0.25);
-    width: 170px;
-    height: 170px;
-    z-index: 2;
-    transition: background .5s;
+    width: 110px;
+    height: 110px;
+    transition: background .5s, box-shadow .7s;
 }
 #but:hover{
     background: #c29c70;
+    box-shadow: -3px 0px 24px -6px rgba(255, 255, 255, 0.25);
 }
 
 .searchsmall{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 170px;
-    width: 170px;
+    height: 110px;
+    width: 110px;
 }
 
 .butimg{
-    height: 100px;
+    height: 80px;
 }
 
-@media screen and (max-width:980px) and (max-height:2120px) and (orientation:portrait){
+#searchbar::placeholder{
+    font-size: 40px;
+}
+#searchbar:focus-visible{
+    outline: 0;
+}
+@media screen and (min-width:690px) {
     .nav{
         height: 100%;
         display: flex;
@@ -101,7 +100,115 @@ body{
         align-items: flex-end;
     }
     
-    .nav ul{
+    .nav ol{
+        display: flex;
+        list-style: none;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 25px;
+        width: 500px;
+        height: 90px;
+        border-radius: 35px;
+        background: #E6B985;
+        box-shadow: 0px 6px 13px rgba(0, 0, 0, 0.25);
+    }
+    
+    .nav ol li a{
+        font-size: 30px;
+        margin: 0 20px 0 20px;
+        text-decoration: none;
+        color: #FFECE2;
+        transition: all .5s;
+    }
+    .nav ol li a:hover{
+        color: black;
+    }
+}
+
+@media screen and (max-width:980px) and (max-height:2120px) and (orientation:portrait){
+    #logobox{
+        position: absolute;
+        height: 50%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #logo{
+        height: 300px;
+    }
+    
+    #searchbarbox{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #searchbar{
+        font-size: 40px;
+        width: 900px;
+        height: 170px;
+        border-radius: 50px;
+        border-style: none;
+        background: #D3C3B0;
+        box-shadow: 0px 6px 13px rgba(0, 0, 0, 0.25);
+        padding: 10px 50px 0 50px;
+    }
+    #searchbar::placeholder{
+        font-size: 40px;
+    }
+
+    #butbox{
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: right;
+    }
+    
+    #but{
+        display: flex;
+        color: white;
+        margin-right: 40px;
+        border-style: none;
+        border-radius: 50px;
+        background: #E5B985;
+        box-shadow: -3px 0px 24px -6px rgba(0, 0, 0, 0.25);
+        width: 170px;
+        height: 170px;
+        transition: background .5s, box-shadow .5s;
+    }
+    #but:hover{
+        background: #c29c70;
+        box-shadow: -3px 0px 24px -6px rgba(255, 255, 255, 0.25);
+    }
+    
+    .searchsmall{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 170px;
+        width: 170px;
+    }
+    
+    .butimg{
+        height: 100px;
+    }
+
+    .nav{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+    
+    .nav ol{
         display: flex;
         list-style: none;
         flex-direction: row;
@@ -117,14 +224,14 @@ body{
         box-shadow: 0px 6px 13px rgba(0, 0, 0, 0.25);
     }
     
-    .nav ul a{
+    .nav ol li a{
         font-size: 58px;
         margin: 0 30px 0 30px;
         text-decoration: none;
         color: #FFECE2;
-        transition: color .5s, background .5s;
+        transition: color .5s;
     }
-    .nav ul a:hover{
+    .nav ol li a:hover{
         color: black;
     }
 }
