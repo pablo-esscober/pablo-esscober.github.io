@@ -5,9 +5,27 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <form action="https://google.com/search" class="search">
-            <input id="searchbar" type="text" name="q" placeholder="Your question" autocomplete="off">
-            <button id="but" type="submit"><img src="data\Search.png" class="searchsmall"></button>
+        <div id="logobox">
+            <img id="logo" src="data\logo.png">
+        </div>
+        <form action="https://google.com/search">
+            <div id="searchbarbox">
+                <input id="searchbar" type="text" name="q" placeholder="Your question" autocomplete="off">
+            </div>
+            <div id="butbox">
+                <button id="but" type="submit">
+                    <div class="searchsmall">
+                        <img class="butimg" src="data\Search.png">
+                    </div>
+                </button>
+            </div>
         </form>
+        <div class="nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Image</a></li>
+                <li><a href="#">Advanced</a></li>
+            </ul>
+        </div>
     </body>
 </html>
