@@ -1,23 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title>Search</title>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <div class="Search">
-            <form action="https://google.com/search">
-                <div class="main">
-                    <input id="Search" type="text" name="q" placeholder="Your question" autocomplete="off">
-                    <button id="but" type="submit">Search</button>
-                </div>
-                <div class="nav">
-                    <ul>
-                        <li><a href="image.html">Image</a></li>
-                        <li><a href="advan.html">Advanced</a></li>
-                    </ul>
-                </div>
-            </form>
+        <div id="logobox">
+            <img id="logo" src="data\logo.png">
+        </div>
+        <form action="https://google.com/search">
+            <div id="searchbarbox">
+                <input id="searchbar" type="text" name="q" placeholder="Your question" autocomplete="off">
+            </div>
+            <div id="butbox">
+                <button id="but" type="submit">
+                    <div class="searchsmall">
+                        <img class="butimg" src="data\Search.png">
+                    </div>
+                </button>
+            </div>
+        </form>
+        <div class="nav">
+            <ol>
+                <li><a href="index.html" id="active">Home</a></li>
+                <li><a href="image.html" class="image">Image</a></li>
+                <li><a href="advan.html" class="advan">Advanced</a></li>
+            </ol>
         </div>
     </body>
 </html>
