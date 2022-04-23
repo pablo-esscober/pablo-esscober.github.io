@@ -31,7 +31,7 @@ h1{
     z-index: 1;
 }
 #logo{
-    height: 300px;
+    height: 200px;
 }
 #searchbarbox{
     position: absolute;
@@ -193,7 +193,7 @@ h1{
         z-index: 1;
     }
     #logo{
-        height: 400px;
+        height: 350px;
     }
     #searchbarbox{
         position: absolute;
