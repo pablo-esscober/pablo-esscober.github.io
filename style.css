@@ -28,7 +28,7 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 1;
+    z-index: 100;
 }
 #logo{
     height: 200px;
@@ -40,7 +40,7 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 2;
+    z-index: 200;
 }
 #searchbar{
     font-size: 20px;
@@ -56,13 +56,14 @@ h1{
     font-size: 20px;
 }
 .butbox{
+    overflow: visible;
     height: 100%;
     width: 15%;
     position:absolute;
     display: flex;
     align-items: center;
     justify-content: right;
-    z-index: 3;
+    z-index: 400;
 }
 .but{
     display: flex;
@@ -73,6 +74,7 @@ h1{
     background: #E5B985;
     box-shadow: -3px 0px 24px -6px rgba(0, 0, 0, 0.25);
     height: 80px;
+    z-index: 400;
     transition: background .5s, box-shadow .7s;
 }
 .but:hover{
@@ -88,13 +90,15 @@ h1{
 }
 .butimg{
     height: 35px;
+    z-index: 400;
 }
 #searchbar:focus-visible{
     outline: 0;
 }
 #active{
-    color:#D3C3B0;
+    color:#605952;
     filter: drop-shadow(0px 4px 10px rgba(110, 101, 90, 0.767));
+    pointer-events: none;
 }
 @media screen and (min-width:681px) and (orientation: landscape) {
     .nav{
@@ -105,7 +109,7 @@ h1{
         display: flex;
         justify-content: center;
         align-items: flex-end;
-        z-index: 3;
+        z-index: 400;
     }
     .nav ol{
         display: flex;
@@ -154,7 +158,8 @@ h1{
     .butsmall{
         display: flex;
         font: bold;
-        font-size:x-large;
+        font-size: x-large;
+        color: #FFECE2;
     }
     #butimgoff{
         display: none;
@@ -190,7 +195,7 @@ h1{
         display: flex;
         justify-content: center;
         align-items: center;
-        z-index: 1;
+        z-index: 100;
     }
     #logo{
         height: 350px;
@@ -202,7 +207,7 @@ h1{
         display: flex;
         justify-content: center;
         align-items: center;
-        z-index: 2;
+        z-index: 200;
     }
     #searchbar{
         font-size: 40px;
@@ -225,11 +230,11 @@ h1{
         align-items: center;
         justify-content: right;
         margin-left: 100%;
-        z-index: 3;
+        z-index: 400;
     }
     .but{
         display: flex;
-        color: white;
+        color: #FFECE2;
         margin-right: 40px;
         border-style: none;
         border-radius: 50px;
@@ -237,6 +242,7 @@ h1{
         box-shadow: -3px 0px 24px -6px rgba(0, 0, 0, 0.25);
         width: 170px;
         height: 170px;
+        z-index: 400;
         transition: background .5s, box-shadow .5s;
     }
     
@@ -253,6 +259,7 @@ h1{
     }
     .butimg{
         height: 80px;
+        z-index: 400;
     }
     .nav{
         bottom: 0;
@@ -262,7 +269,7 @@ h1{
         display: flex;
         justify-content: center;
         align-items: flex-end;
-        z-index: 3;
+        z-index: 400;
     }
     .nav ol{
         display: flex;
