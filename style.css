@@ -13,13 +13,6 @@ html, body{
 body{
     background: #FFECE2;
 }
-h1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-}
 #logobox{
     top: 22%;
     position: absolute;
@@ -32,6 +25,7 @@ h1{
 }
 #logo{
     height: 200px;
+    filter: drop-shadow(0px 4px 5px rgba(0, 0, 0, 0.367));
 }
 #searchbarbox{
     position: absolute;
@@ -186,6 +180,68 @@ h1{
         width: 15%;
         margin-left: 71.5%;
     }
+    .range{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0.5%;
+        width: 70%;
+        height: 35px;
+    }
+    .rangein{
+        border-style: none;
+        width: 100%;
+        height: 100%;
+        background: #D3C3B0;
+        border-radius: 12px;
+        box-shadow: 0px 6px 13px rgba(0, 0, 0, 0.25);
+        padding: 13px 15px 10px 15px;
+    }
+    .inpdes{
+        height: 35px;
+        margin: 0.5%;
+        width: 70%;
+        border-radius: 12px;
+        border-style: none;
+        background: #D3C3B0;
+        box-shadow: 0px 6px 13px rgba(0, 0, 0, 0.25);
+        padding: 13px 15px 10px 15px;
+    }
+    .butbox3{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 50px;
+        width: 100%;
+        margin: 2%;
+    }
+    .but3{
+        height: 100%;
+        width: 150px;
+        border-style: none;
+        border-radius: 15px;
+        background: #E5B985;
+        color: #FFECE2;
+        font-size: 22px;
+        box-shadow: 0px 6px 13px rgba(0, 0, 0, 0.25);
+        transition: background .5s;
+    }
+    .label1{
+        font-size: 38px;
+        font-weight: bolder;
+        filter: drop-shadow(0px 5px 7px rgba(0, 0, 0, 0.367));
+    }
+    .label2{
+        margin: 0.5%;
+        font-size: 19px;
+        filter: drop-shadow(0px 4px 3px rgba(0, 0, 0, 0.367));
+    }
+    .label3{
+        font-size: 30px;
+        font: lighter;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
 }
 @media screen and (max-width:980px) and (max-height:2120px) and (orientation:portrait){
     #logobox{
@@ -319,4 +375,102 @@ h1{
     .butsmall{
         display: none;
     }
+    /*___________________For_advan.html____________________*/
+    .range{
+        margin: 1%;
+        width: 90%;
+        height: 80px;
+    }
+    .rangein{
+        border-radius: 12px;
+        padding: 13px 15px 10px 15px;
+        width: 100%;
+        height: 100%;
+        font-size: 25px;
+        box-shadow: 0px 6px 13px rgba(0, 0, 0, 0.25);
+    }
+    .inpdes{
+        height: 80px;
+        margin: 1%;
+        width: 90%;
+        border-radius: 12px;
+        font-size: 25px;
+        padding: 13px 15px 10px 15px;
+    }
+    .butbox3{
+        height: 80px;
+        width: 100%;
+        margin: 3%;
+    }
+    .but3{
+        width: 250px;
+        border-radius: 15px;
+        font-size: 40px;
+    }
+    .label1{
+        font-size: 75px;
+        font-weight: bolder;
+    }
+    .label2{
+        margin: 1%;
+        font-size: 30px;
+    }
+    .label3{
+        font-size: 45px;
+        font: lighter;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+}
+.advanbox{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 200;
+}
+.range{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.rangein{
+    border-style: none;
+    background: #D3C3B0;
+}
+.rangein::placeholder{
+    color: #FFECE2;
+}
+.rangein:focus-visible{
+    outline: 0;
+}
+.inpdes{
+    border-style: none;
+    background: #D3C3B0;
+    box-shadow: 0px 6px 13px rgba(0, 0, 0, 0.25);
+}
+.inpdes::placeholder{
+    color: #FFECE2;
+}
+.inpdes:focus-visible{
+    outline: 0;
+}
+.butbox3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.but3{
+    height: 100%;
+    border-style: none;
+    background: #E5B985;
+    color: #FFECE2;
+    box-shadow: 0px 6px 13px rgba(0, 0, 0, 0.25);
+    transition: background .5s;
+}
+.but3:hover{
+    background: #c29c70;
 }
