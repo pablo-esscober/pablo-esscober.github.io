@@ -54,6 +54,7 @@ h1{
 }
 #searchbar::placeholder{
     font-size: 20px;
+    color: #FFECE2;
 }
 .butbox{
     overflow: visible;
