@@ -208,12 +208,7 @@ body{
         padding: 13px 15px 10px 15px;
     }
     .butbox3{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 50px;
-        width: 100%;
-        margin: 2%;
+        visibility: hidden;
     }
     .but3{
         height: 100%;
@@ -410,10 +405,12 @@ body{
     .label1{
         font-size: 75px;
         font-weight: bolder;
+        filter: drop-shadow(0px 5px 7px rgba(0, 0, 0, 0.367));
     }
     .label2{
         margin: 1%;
         font-size: 30px;
+        filter: drop-shadow(0px 4px 3px rgba(0, 0, 0, 0.367));
     }
     .label3{
         font-size: 45px;
