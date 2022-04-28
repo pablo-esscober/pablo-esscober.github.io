@@ -181,31 +181,28 @@ body{
         margin-left: 71.5%;
     }
     .range{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 0.5%;
+        margin: 6px;
         width: 70%;
         height: 35px;
     }
     .rangein{
-        border-style: none;
         width: 100%;
         height: 100%;
-        background: #D3C3B0;
         border-radius: 12px;
         box-shadow: 0px 6px 13px rgba(0, 0, 0, 0.25);
         padding: 13px 15px 10px 15px;
     }
     .inpdes{
         height: 35px;
-        margin: 0.5%;
+        margin: 6px;
         width: 70%;
         border-radius: 12px;
-        border-style: none;
-        background: #D3C3B0;
-        box-shadow: 0px 6px 13px rgba(0, 0, 0, 0.25);
         padding: 13px 15px 10px 15px;
+        color: #FFECE2;
+    }
+    #listt{
+        color: #FFECE2;
+        padding: 5px 0 4px 10px;
     }
     .butbox3{
         visibility: hidden;
@@ -227,7 +224,7 @@ body{
         filter: drop-shadow(0px 5px 7px rgba(0, 0, 0, 0.367));
     }
     .label2{
-        margin: 0.5%;
+        margin: 6px;
         font-size: 19px;
         filter: drop-shadow(0px 4px 3px rgba(0, 0, 0, 0.367));
     }
@@ -391,6 +388,11 @@ body{
         border-radius: 12px;
         font-size: 25px;
         padding: 13px 15px 10px 15px;
+        color: #FFECE2;
+    }
+    #listt{
+        color: #FFECE2;
+        padding: 5px 0 4px 10px;
     }
     .butbox3{
         height: 80px;
