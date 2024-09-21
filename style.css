@@ -133,7 +133,7 @@ body{
         transition: color .5s, background .5s;
     }
     .home:hover, .image:hover, .advan:hover{
-        background: #ddb07c;
+        background: #e8c297;
     }
     .home{
         border-radius: 35px 0 0 35px;
