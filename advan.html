@@ -5,11 +5,33 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <h1>Under development</h1>
+        <form action="https://google.com/search">
+            <div class="advanbox">
+                <p class="label1">Find pages</p>
+                <input class="inpdes" placeholder="with words:" type="text" autocomplete="off" name="as_q">
+                <input class="inpdes" placeholder="with the phrase:" type="text" autocomplete="off" name="as_epq">
+                <input class="inpdes" placeholder="with any of these words:" type="text" autocomplete="off" name="as_oq">
+                <input class="inpdes" placeholder="without words:" type="text" autocomplete="off" name="as_eq">
+                <select class="inpdes" id="listt" name="lr">
+                    <option value="">search in:</option>
+                    <option value="lang_en">English</option>
+                    <option value="lang_uk">Ukrainian</option>
+                </select>
+                <p class="label2">with a range of numbers:</p>
+                <div class="range">
+                    <input class="rangein" placeholder="Min" type="text" autocomplete="off" name="as_nlo">
+                    <p class="label3">-</p>
+                    <input class="rangein" placeholder="Max" type="text" autocomplete="off" name="as_nhi">
+                </div>
+                <div class="butbox3">
+                    <button class="but3" type="submit">Search</button>
+                </div>
+            </div>    
+        </form>
         <div class="nav">
             <ol>
                 <li><a href="index.html" class="home">Home</a></li>
-                <li><a href="image.html" class="image">Image</a></li>
+                <li><a href="image.html" class="image">Images</a></li>
                 <li><a href="advan.html" id="active">Advanced</a></li>
             </ol>
         </div>
